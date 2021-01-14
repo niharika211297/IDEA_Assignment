@@ -1,0 +1,12 @@
+id INT AI NOT NULL
+timestamp CURRENT_TIMESTAMP NOT NULL
+statename VARCHAR(3) NOT NULL
+numberofresults LONGINT NOT NULL
+
+//The schema defined to store the data in mySQL 
+CREATE TABLE covidStats(
+id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+timestamp TIMESTAMP NOT NULL DEFAULT NOW(),
+stateCode VARCHAR(3) NOT NULL,
+resultCount DECIMAL(10, 0) NOT NULL
+);
